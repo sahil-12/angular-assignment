@@ -1,7 +1,9 @@
 # Assignment
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+node version used 14.21.3
 
+# task
+created a landing homepage with the help of html,css and angular for creating component and routing
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
