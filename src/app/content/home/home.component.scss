@@ -1,0 +1,138 @@
+.container-fluid {
+    background-color: black;
+}
+
+.btn-cmn {
+    background-color: goldenrod;
+    color: black;
+    font-weight: 700;
+}
+
+.heading-text {
+    font-size: 40px;
+    font-weight: 900;
+    color: goldenrod;
+}
+
+.banner {
+    // display: flex;
+    background-color: black;
+    height: auto;
+    padding: 50px 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.banner-text {
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .main-text-b {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    & .main-desc {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    & .btn-exp {
+        background-color: goldenrod;
+        color: black;
+        font-weight: 700;
+        margin-top: 5%;
+        width: 30%;
+
+        @media (max-width:768px) {
+            width: 100%;
+        }
+    }
+}
+
+.detail-section {
+    height: auto;
+    background-color: rgb(19, 17, 17);
+    margin: 0% 5%;
+    padding: 1% 2%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+    & .card {
+        border: 0 !important;
+
+        & .card-body {
+            background-color: goldenrod;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+.prod-details-section {
+    margin: 0% 5%;
+    padding: 1% 2%;
+    height: auto;
+
+    & .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+}
+
+.footer-section {
+    margin: 0% 5%;
+    padding: 1% 2%;
+    height: auto;
+    color: white;
+}
+
+.di-fixed {
+    z-index: 10;
+}
+
+.card {
+    border: 0px !important;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-icon div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    i{
+        color: goldenrod;
+    }
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    i {
+        font-size: 20px;
+        margin-right: 15px;
+        color: goldenrod;
+    }
+}

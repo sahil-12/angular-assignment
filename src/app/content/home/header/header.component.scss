@@ -1,0 +1,97 @@
+  header {
+    width: 100%;
+    background-color: rgb(19, 17, 17);
+    padding: 10px 0; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 20px;
+  }
+  
+  .logo {
+    color:goldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    color: goldenrod;
+    text-decoration: none;
+    padding: 10px; 
+    font-size: 1.2rem; 
+  }
+
+  .nav-links a:hover {
+    border-bottom: 1px solid goldenrod;
+  }
+
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .x {
+    color: white;
+    font-size: 20px;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  .close-btn {
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px; 
+    cursor: pointer;
+    align-self: flex-start; 
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 250px; 
+      background-color: rgb(19, 17, 17);; 
+      transform: translateX(-100%); 
+      flex-direction: column; 
+      padding-top: 60px;
+      z-index: 10; 
+      transition: transform 0.5s ease-in-out; 
+    }
+  
+    .nav-links.nav-active {
+      transform: translateX(0); 
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 20px 0; 
+    }
+  
+    .nav-links a {
+      font-size: 1.5rem; 
+      padding: 10px 20px;
+      display: block;
+    }
+  }
+  
